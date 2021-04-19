@@ -18,6 +18,10 @@
 
 const path = require('path');
 const express = require('express');
+// // dotenv is configured in launch.json file: https://stackoverflow.com/a/58127078/6908282
+// // uncomment below code if you're not using the "Run and Debug" feature in VsCode to start the app
+const dotenv = require('dotenv');
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const config = require('./config');
